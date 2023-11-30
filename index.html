@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./Style.css" />
 </head>
 <body>
     
@@ -63,20 +64,32 @@
     <h2>Conceptos importantes de CSS</h2>
     <nav>
         <ol>
-            <li>Selector</li>
+            <li>Selectores</li>
                 <ul>
-                   <li>Es como el nombre de algo a lo que quieres aplicar estilo. Puede ser el nombre de una etiqueta HTML (h1, p, div), una clase (.clase) o un ID (#identificador). Así se invoca al elemento que se desea poner estilo.</li>
+                   <li>Son como etiquetas que se usan para decirle al navegador qué elementos HTML se quiere estilizar. Se puede seleccionar (p, .class, #id).</li>
                    
                 </ul>
-            <li>Propiedad</li>
+            <li>Herencia</li>
                <ul>
-                  <li>Son las características que quieres cambiar o ajustar en los elementos seleccionados. Por ejemplo, el color del texto (color), el tamaño de la letra (font-size).</li>
+                  <li>Es cuando un elemento HTML obtiene los estilos de otro elemento padre. Si se aplica un estilo al cuerpo (< body>), los elementos dentro de este, heredarán sus estilos. Seguidamente si un (< p>) que está dentro del body, ambos tendrán un mismo color, excepto si se especifica lo contrario para el "p" </li>
 
                </ul>
-            <li>Valor</li>
+            <li>Cascada</li>
                <ul>
-                  <li>Es lo que se le da a la propiedad para decirle cómo se debe ver. Por ejemplo en el caso del color, #00ff00 (un código de color).</li>
+                  <li>Si se tienen varios conflictos de estilos, html seguirá la regla de la cascada, que consiste en hacer prevalecer el estilo que se encuentre en la última linea.</li>
 
+               </ul>
+               <li>Especificidad</li>
+               <ul>
+                  <li>Los selectores tienen distintos valores de peso, esto quiere decir que hará prevalecer el estilo del que tenga el mayor peso frente a otros.</li>
+                  <li>EJEMPLO: 
+                        <ul>
+                            <li>etiqueta    1</li>
+                            <li>clases      10</li>
+                            <li>id          100</li>
+                            <li>inline      1000</li>
+                            <li>!important  infinito (no usar)/li>
+                        </ul>
                </ul>
         </ol>
     </nav>
